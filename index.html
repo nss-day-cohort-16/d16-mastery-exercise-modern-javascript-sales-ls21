@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robot BattleDome</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="container" id="selection">
+		<div class="row">
+			<div id="userInfo" class="col-md-offset-1 col-md-5">
+				<p>Name Your Robot Warrior: </p>
+				<input id="userName" type="text">
+				<select id="userRobo">
+					<option id="Phoenix">Phoenix</option>
+					<option id="Spider">Spider</option>
+					<option id="Lynx">Lynx</option>
+					<option id="Arduino">Arduino</option>
+					<option id="Alpha5">Alpha5</option>
+					<option id="JohnnyBravo">JohnnyBravo</option>
+				</select>
+			</div>
+
+			<div id="enemyInfo" class="col-md-5">
+				<p>Pick Your Challenger and Enter a Name: </p>
+				<input type="text" id="enemyName">
+				<select id="enemyRobo">
+					<option>Phoenix</option>
+					<option>Spider</option>
+					<option>Lynx</option>
+					<option>Arduino</option>
+					<option>Alpha 5</option>
+					<option>JohnnyBravo</option>
+				</select>
+			</div>
+			<button id="start" class="btn btn-primary btn-lg btn-block">Enter the Battlefield</button>
+		</div>
+	</div>
+
+	<div class="container" id="battle">
+		<div class="row">
+			<button id="attack" class="btn btn-primary btn-lg btn-block">FIGHT!</button>
+			<div id="userImage"></div>
+			<div id="enemyImage"></div>
+		</div>
+	</div>
+
+	<div class="container" id="fightOver">
+	<div class="row">
+	<p id="gameOver"></p>
+	</div>
+		
+	</div>
+
+
+
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="javascripts/quiz.js"></script>
+<script type="text/javascript" src="javascripts/types.js"></script>
+<script type="text/javascript" src="javascripts/app.js"></script>
+</body>
+</html>
